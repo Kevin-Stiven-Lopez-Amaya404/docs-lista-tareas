@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Estado** | Por hacer |
+| **Estado** | En desarrollo (desde 2026-11-22) |
 | **Rama** | `hu4` |
 | **PR** | — |
 | **Diseño** | [Editando](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=2-127) · [Componente Tarea](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=1-40) (variante editando) |
