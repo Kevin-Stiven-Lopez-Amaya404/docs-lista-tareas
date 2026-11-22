@@ -15,19 +15,21 @@ Documentación del proyecto [lista-tareas](https://github.com/Kevin-Stiven-Lopez
 | `hu/_plantilla.md` | Plantilla para crear una HU nueva |
 | `diseno.md` | Enlaces a pantallas y componentes de Figma, y tokens de diseño |
 | `decisiones.md` | Decisiones técnicas y de producto, con fecha y motivo |
-| `CHANGELOG.md` | Qué se entregó en cada versión (cada merge de `develop` a `main` en lista-tareas) |
+| `CHANGELOG.md` | Qué se entregó en cada versión (cada merge de `dev` a `main` en lista-tareas) |
 
 ## Cómo se mantiene
 
-Cada avance de una HU en lista-tareas se refleja aquí en el mismo momento:
+Mismo flujo que lista-tareas, con la **misma rama `huN` en los dos repos**:
 
-| Paso en lista-tareas | Qué se actualiza aquí |
+```
+dev ──► huN ──(PR huN → dev, al terminar la HU)──► dev ──(PR "Release", solo en entregas)──► main
+```
+
+| Momento | Qué se hace aquí |
 |---|---|
-| Se crea `feature/HU-XX-...` | Ficha de la HU: estado **En desarrollo** y rama. Tablero: tarjeta a "En desarrollo" |
-| PR de la HU fusionado en `develop` | Ficha: estado **En pruebas**, enlace al PR y resumen de la implementación. Tablero: "En pruebas" |
-| PR `develop` → `main` (entrega) | Ficha: **Entregado**. Tablero: "Entregado". `CHANGELOG.md`: nueva versión |
-| Se decide algo relevante | Nueva entrada en `decisiones.md` |
+| Empieza la HU | Se crea la rama `huN` desde `dev` y en ella la ficha pasa a **En desarrollo** |
+| La HU se fusiona en `dev` en lista-tareas | En la misma rama `huN`: ficha **En pruebas** con criterios marcados, enlace al PR y resumen de la implementación, y tarjeta del tablero a "En pruebas". Un solo PR `huN → dev` |
+| Entrega a producción (PR `dev → main` en lista-tareas) | PR `dev → main` aquí también: fichas **Entregado**, tablero "Entregado" y nueva versión en `CHANGELOG.md` |
+| Se decide algo relevante | Nueva entrada en `decisiones.md`, dentro de la rama de la HU |
 
-Aquí solo va el resumen y los enlaces, nunca el código.
-
-Este repo sigue el mismo flujo: rama desde `develop` → PR a `develop` → PR `develop` → `main` para publicar. `main` está protegida.
+Aquí solo va el resumen y los enlaces, nunca el código. `main` está protegida y solo cambia en una entrega. Las ramas `huN` se conservan como historial.

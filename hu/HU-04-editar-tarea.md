@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Estado** | Por hacer |
-| **Rama** | `feature/HU-04-editar-tarea` |
+| **Rama** | `hu4` |
 | **PR** | — |
 | **Diseño** | [Editando](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=2-127) · [Componente Tarea](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=1-40) (variante editando) |
 
