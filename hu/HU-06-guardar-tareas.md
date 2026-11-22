@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Estado** | En pruebas (en `dev` desde 2026-11-22) |
+| **Estado** | Entregado en v1.0.0 (2026-11-22) |
 | **Rama** | `hu6` |
 | **PR** | [lista-tareas#9](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/9) |
 | **Diseño** | No tiene interfaz |

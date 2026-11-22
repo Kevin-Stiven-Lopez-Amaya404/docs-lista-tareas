@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Estado** | En pruebas (en `dev` desde 2026-11-22) |
+| **Estado** | Entregado en v1.0.0 (2026-11-22) |
 | **Rama** | `hu5` |
 | **PR** | [lista-tareas#8](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/8) |
 | **Diseño** | [Principal](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=1-41) (ícono de eliminar en cada tarea) |

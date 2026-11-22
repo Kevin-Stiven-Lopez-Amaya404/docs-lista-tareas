@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Estado** | En pruebas (en `dev` desde 2026-11-22) |
+| **Estado** | Entregado en v1.0.0 (2026-11-22) |
 | **Rama** | `feature/HU-02-ver-lista` (fusionada y eliminada) |
 | **PR** | [lista-tareas#4](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/4) |
 | **Diseño** | [Principal](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=1-41) · [Vacía](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=2-72) |
