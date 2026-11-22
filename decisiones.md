@@ -2,6 +2,11 @@
 
 Registro de decisiones técnicas y de producto. La más reciente va arriba.
 
+## 2026-11-22 — Finales de línea LF y plantilla de PR
+
+- `.gitattributes` con `* text=auto eol=lf` en los dos repos. En Windows, `core.autocrlf=true` mezclaba CRLF y LF en los archivos editados. Ahora el repo fija LF para todos.
+- Plantilla `.github/pull_request_template.md` con la lista de verificación de cada HU (criterios, pruebas, navegador, Figma y documentación) en lista-tareas, y la de documentación en este repo.
+
 ## 2026-11-22 — Ramas `huN` y `dev` (reemplaza el flujo anterior)
 
 - `develop` se renombra a `dev`.
