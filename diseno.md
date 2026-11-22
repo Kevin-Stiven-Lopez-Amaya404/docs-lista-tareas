@@ -4,15 +4,18 @@ El diseño se hace en Figma y es la fuente de verdad: la interfaz se construye a
 
 **Archivo:** https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV
 
-## Pantallas (390 × 844)
+## Pantallas
 
-| Pantalla | HU | Enlace |
-|---|---|---|
-| Principal | HU-01, 02, 03, 05 | [Abrir](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=1-41) |
-| Vacía | HU-01, 02 | [Abrir](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=2-72) |
-| Editando | HU-04 | [Abrir](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=2-127) |
+| Pantalla | Tamaño | HU | Enlace |
+|---|---|---|---|
+| Principal | 390 × 844 | HU-01, 02, 03, 05 | [Abrir](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=1-41) |
+| Vacía | 390 × 844 | HU-01, 02 | [Abrir](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=2-72) |
+| Editando | 390 × 844 | HU-04 | [Abrir](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=2-127) |
+| Escritorio | 1440 × 900 | HU-07 | [Abrir](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=17-82) |
 
-Pendiente de diseñar: versión de escritorio y estados de foco/hover.
+**Escritorio (desde 768px):** columna centrada de 640px, `espacio/64` arriba y abajo, título Bold 36 y resumen Regular 16. El resto igual que en celular.
+
+Pendiente de diseñar: estados de foco/hover.
 
 ## Componentes
 
@@ -35,7 +38,7 @@ En el código se usan como variables CSS con el mismo nombre (`color/fondo` → 
 | `color/primario` | `#2754C5` |
 | `color/sobre-primario` | `#FFFFFF` |
 | `color/peligro` | `#C2410C` |
-| `espacio/4` · `8` · `12` · `16` · `24` | 4 · 8 · 12 · 16 · 24 px |
+| `espacio/4` · `8` · `12` · `16` · `24` · `64` | 4 · 8 · 12 · 16 · 24 · 64 px |
 | `radio/6` · `radio/12` | 6 · 12 px |
 
-**Tipografía:** Inter — Regular 14/16, Semi Bold 16/18, Bold 28.
+**Tipografía:** Inter — Regular 14/16, Semi Bold 16/18, Bold 28 (Bold 36 en escritorio).
