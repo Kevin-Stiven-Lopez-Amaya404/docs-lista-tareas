@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Estado** | Por hacer |
+| **Estado** | En desarrollo (desde 2026-11-22) |
 | **Rama** | `feature/HU-03-completar-tarea` |
 | **PR** | — |
 | **Diseño** | [Componente Tarea](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=1-40) (variantes pendiente / completada) |
