@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Estado** | Por hacer |
+| **Estado** | En desarrollo (desde 2026-11-22) |
 | **Rama** | `feature/HU-02-ver-lista` |
 | **PR** | — |
 | **Diseño** | [Principal](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=1-41) · [Vacía](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=2-72) |
