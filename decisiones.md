@@ -2,6 +2,13 @@
 
 Registro de decisiones técnicas y de producto. La más reciente va arriba.
 
+## 2026-11-22 — Despliegue con Vercel (reemplaza GitHub Pages)
+
+- La app se despliega con **Vercel**, igual que el otro proyecto del equipo. Producción: https://lista-tareas-sage.vercel.app/ (rama `main`).
+- Vercel está conectado al repositorio de GitHub. Cada merge a `main` publica en producción y cada PR genera una vista previa, protegida con el inicio de sesión de Vercel.
+- `vercel.json` (lista-tareas#22): build de Vite hacia `dist`, cabeceras de seguridad (CSP que solo permite Google Fonts como origen externo, `nosniff`, `X-Frame-Options: DENY`, HSTS, `Referrer-Policy`, `Permissions-Policy`) y caché inmutable para `/assets/`.
+- Se quitó el workflow de GitHub Pages. La v1.1.1 se había publicado por error en GitHub Pages; esa dirección queda obsoleta.
+
 ## 2026-11-22 — Finales de línea LF y plantilla de PR
 
 - `.gitattributes` con `* text=auto eol=lf` en los dos repos. En Windows, `core.autocrlf=true` mezclaba CRLF y LF en los archivos editados. Ahora el repo fija LF para todos.
