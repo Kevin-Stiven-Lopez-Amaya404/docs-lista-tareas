@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Estado** | En pruebas (en `dev` desde 2026-11-22) |
+| **Estado** | Entregado en v1.1.0 (2026-11-22) |
 | **Rama** | `hu7` |
 | **PR** | [lista-tareas#12](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/12) |
 | **Diseño** | [Escritorio](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=17-82) (1440 × 900, columna de 640px) |

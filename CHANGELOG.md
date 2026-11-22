@@ -2,6 +2,19 @@
 
 Cada entrega es un PR de `dev` a `main` en lista-tareas, con su etiqueta y su Release en GitHub. La más reciente va arriba.
 
+## v1.1.0 — 2026-11-22
+
+Diseño completo: versión de escritorio y estados de interacción ([Release](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/releases/tag/v1.1.0) · [PR #15](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/15)).
+
+| HU | Qué hace | PR |
+|---|---|---|
+| [HU-07](hu/HU-07-version-escritorio.md) | Versión de escritorio: desde 768px, columna centrada de 640px, más aire y título 36px | [#12](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/12) |
+| [HU-08](hu/HU-08-estados-interaccion.md) | Hover según Figma (solo con mouse) y anillo de foco único en todos los controles | [#13](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/13) |
+
+**Calidad:** 23 pruebas automáticas y build en verde. Sin desborde de 320 a 1920px; hover y foco verificados en el navegador; contraste mínimo 6.14:1.
+
+**Compatibilidad:** las tareas guardadas con v1.0.0 se siguen cargando igual.
+
 ## v1.0.0 — 2026-11-22
 
 Primera entrega a producción ([Release](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/releases/tag/v1.0.0) · [PR #11](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/11)).
@@ -19,4 +32,4 @@ También: configuración inicial (Vite, Vitest, CI), flujo de ramas `dev`/`huN`.
 
 **Calidad:** 23 pruebas automáticas y build en verde en el CI. Cada HU verificada en el navegador contra sus criterios y el diseño de Figma.
 
-**Pendiente para próximas versiones:** diseño de escritorio (hoy ancho de celular, 390px) y estados hover/focus diseñados en Figma.
+**Pendiente para próximas versiones:** diseño de escritorio y estados hover/focus en Figma (resuelto en v1.1.0).
