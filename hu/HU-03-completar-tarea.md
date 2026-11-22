@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Estado** | En pruebas (en `dev` desde 2026-11-22) |
+| **Estado** | Entregado en v1.0.0 (2026-11-22) |
 | **Rama** | `feature/HU-03-completar-tarea` (fusionada y eliminada) |
 | **PR** | [lista-tareas#5](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/5) |
 | **Diseño** | [Componente Tarea](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=1-40) (variantes pendiente / completada) |
