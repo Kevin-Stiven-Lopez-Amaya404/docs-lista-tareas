@@ -2,6 +2,15 @@
 
 Cada entrega es un PR de `dev` a `main` en lista-tareas, con su etiqueta y su Release en GitHub. La más reciente va arriba.
 
+## v1.1.1 — 2026-11-22
+
+La app queda publicada: https://kevin-stiven-lopez-amaya404.github.io/lista-tareas/ ([Release](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/releases/tag/v1.1.1) · [PR #19](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/19)).
+
+- **Despliegue automático** ([#17](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/17)): cada entrega a `main` prueba, construye y publica la app en GitHub Pages. Si las pruebas fallan, no se publica.
+- **Mantenimiento** ([#16](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/16)): finales de línea LF, plantilla de PR y README actualizado.
+
+Sin cambios de comportamiento respecto a v1.1.0. Verificado en la dirección publicada: carga, agregar, recargar conservando la tarea, íconos y fuente.
+
 ## v1.1.0 — 2026-11-22
 
 Diseño completo: versión de escritorio y estados de interacción ([Release](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/releases/tag/v1.1.0) · [PR #15](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/15)).
