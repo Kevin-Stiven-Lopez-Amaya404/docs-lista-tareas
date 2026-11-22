@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Estado** | En pruebas (en `dev` desde 2026-11-22) |
+| **Estado** | Entregado en v1.2.0 (2026-11-22) |
 | **Rama** | `hu9` |
 | **PR** | [lista-tareas#20](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/20) |
 | **Diseño** | Componente [Filtros](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=21-132) en [Principal](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=1-41) y [Escritorio](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=17-82) · pantalla [Filtro sin resultados](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=21-153) |
