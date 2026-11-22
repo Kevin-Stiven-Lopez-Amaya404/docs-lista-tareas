@@ -5,20 +5,20 @@
 /* Layout: una columna — flujo de ramas arriba, tablero de HU en 4 columnas, pasos al final */
 :root {
   --bg: #f6f7f9; --surface: #ffffff; --fg: #1b2230; --muted: #5d6778; --line: #dde1e8;
-  --main: #2754c5; --develop: #c27a12; --feature: #0f8a7a; --ok: #2e8b57;
-  --main-soft: #e6ecfb; --develop-soft: #fbf0df; --feature-soft: #ddf3ef;
+  --main: #2754c5; --dev: #c27a12; --feature: #0f8a7a; --ok: #2e8b57;
+  --main-soft: #e6ecfb; --dev-soft: #fbf0df; --feature-soft: #ddf3ef;
   --display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
   --body: "Inter", "Segoe UI", system-ui, sans-serif;
   --mono: "JetBrains Mono", Consolas, monospace;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --bg: #12161d; --surface: #1a2029; --fg: #e6e9ef; --muted: #9aa3b2; --line: #2c3440;
-  --main: #7d9cf0; --develop: #e7a94a; --feature: #4cc7b4; --ok: #5cc28a;
-  --main-soft: #1e2a47; --develop-soft: #3a2c14; --feature-soft: #143631; color-scheme: dark } }
+  --main: #7d9cf0; --dev: #e7a94a; --feature: #4cc7b4; --ok: #5cc28a;
+  --main-soft: #1e2a47; --dev-soft: #3a2c14; --feature-soft: #143631; color-scheme: dark } }
 :root[data-theme="dark"] {
   --bg: #12161d; --surface: #1a2029; --fg: #e6e9ef; --muted: #9aa3b2; --line: #2c3440;
-  --main: #7d9cf0; --develop: #e7a94a; --feature: #4cc7b4; --ok: #5cc28a;
-  --main-soft: #1e2a47; --develop-soft: #3a2c14; --feature-soft: #143631; color-scheme: dark }
+  --main: #7d9cf0; --dev: #e7a94a; --feature: #4cc7b4; --ok: #5cc28a;
+  --main-soft: #1e2a47; --dev-soft: #3a2c14; --feature-soft: #143631; color-scheme: dark }
 
 body { background: var(--bg); color: var(--fg); font-family: var(--body); line-height: 1.55;
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 2rem 3rem; }
@@ -35,7 +35,7 @@ code, .mono { font-family: var(--mono); font-size: .86em; }
 .branch { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.1rem; display: grid; gap: .4rem; }
 .branch .tag { font-family: var(--mono); font-weight: 500; padding: .1rem .5rem; border-radius: 6px; justify-self: start; }
 .t-main { color: var(--main); background: var(--main-soft); }
-.t-develop { color: var(--develop); background: var(--develop-soft); }
+.t-dev { color: var(--dev); background: var(--dev-soft); }
 .t-feature { color: var(--feature); background: var(--feature-soft); }
 .rule { font-size: .85rem; color: var(--muted); }
 .rule strong { color: var(--fg); }
@@ -56,7 +56,7 @@ code, .mono { font-family: var(--mono); font-size: .86em; }
 .where { font-size: .8rem; color: var(--muted); }
 .card { border: 1px solid var(--line); border-left: 3px solid var(--muted); border-radius: 8px; padding: .65rem .75rem; display: grid; gap: .3rem; background: var(--bg); }
 .card.c-feature { border-left-color: var(--feature); }
-.card.c-develop { border-left-color: var(--develop); }
+.card.c-dev { border-left-color: var(--dev); }
 .card.c-main { border-left-color: var(--main); }
 .card .id { font-family: var(--mono); font-size: .78rem; color: var(--muted); }
 .card .name { font-weight: 600; font-size: .92rem; }
@@ -74,51 +74,51 @@ a.card:hover, a.card:focus-visible { border-color: var(--feature); outline: none
 .steps li { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: .85rem 1rem; display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: .25rem .75rem; counter-increment: s; }
 .steps li::before { content: counter(s); font-family: var(--display); font-weight: 700; font-size: 1.2rem; color: var(--feature); grid-row: span 2; }
 .steps pre { margin: 0; font-family: var(--mono); font-size: .82rem; background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: .5rem .7rem; overflow-x: auto; }
-.never { border: 1px solid var(--develop); background: var(--develop-soft); border-radius: 10px; padding: .85rem 1rem; }
+.never { border: 1px solid var(--dev); background: var(--dev-soft); border-radius: 10px; padding: .85rem 1rem; }
 </style>
 
 <div class="wrap">
   <header>
     <h1>Tablero Lista de Tareas</h1>
-    <p class="lead">Cómo trabajamos: cada historia de usuario (HU) tiene su propia rama, se prueba en <code>develop</code> y solo lo estable llega a <code>main</code> para entregar.</p>
+    <p class="lead">Cómo trabajamos: cada historia de usuario (HU) tiene su propia rama, se prueba en <code>dev</code> y solo lo estable llega a <code>main</code> para entregar.</p>
     <nav class="links" aria-label="Enlaces del proyecto">
       <a href="https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas">Código</a>
       <a href="https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV">Diseño en Figma</a>
       <a href="https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-lista-tareas">Documentación</a>
-      <a href="https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-lista-tareas/blob/develop/decisiones.md">Decisiones</a>
-      <a href="https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-lista-tareas/blob/develop/CHANGELOG.md">Entregas</a>
+      <a href="https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-lista-tareas/blob/dev/decisiones.md">Decisiones</a>
+      <a href="https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-lista-tareas/blob/dev/CHANGELOG.md">Entregas</a>
     </nav>
   </header>
 
   <section>
     <h2>Las tres ramas</h2>
     <div class="branches">
-      <div class="branch"><span class="tag t-main">main</span><p>Lo que se entrega. Siempre estable.</p><p class="rule"><strong>Nunca</strong> se sube código directo. Solo recibe merges desde <code>develop</code>.</p></div>
-      <div class="branch"><span class="tag t-develop">develop</span><p>Donde se junta y se prueba todo.</p><p class="rule">Recibe cada HU terminada. Cuando todo funciona, pasa a <code>main</code>.</p></div>
-      <div class="branch"><span class="tag t-feature">feature/HU-XX-…</span><p>Una rama por cada historia de usuario.</p><p class="rule">Sale de <code>develop</code> y vuelve a <code>develop</code> al terminar.</p></div>
+      <div class="branch"><span class="tag t-main">main</span><p>Lo que se entrega. Siempre estable.</p><p class="rule"><strong>Nunca</strong> se sube código directo. Solo recibe merges desde <code>dev</code>.</p></div>
+      <div class="branch"><span class="tag t-dev">dev</span><p>Donde se junta y se prueba todo.</p><p class="rule">Recibe cada HU terminada. Cuando todo funciona, pasa a <code>main</code>.</p></div>
+      <div class="branch"><span class="tag t-feature">huN</span><p>Una rama por cada historia de usuario.</p><p class="rule">Sale de <code>dev</code> y vuelve a <code>dev</code> al terminar.</p></div>
     </div>
   </section>
 
   <section>
     <h2>Así se mueve el código</h2>
     <div class="graph">
-      <svg viewBox="0 0 820 230" role="img" aria-label="Diagrama: HU-01 y HU-02 salen de develop y vuelven a develop; develop se une a main en la entrega v1.0">
+      <svg viewBox="0 0 820 230" role="img" aria-label="Diagrama: HU-01 y HU-02 salen de dev y vuelven a dev; dev se une a main en la entrega v1.0">
         <!-- lanes -->
         <text class="lbl" x="10" y="44" style="fill:var(--main)">main</text>
-        <text class="lbl" x="10" y="114" style="fill:var(--develop)">develop</text>
-        <text class="lbl" x="10" y="184" style="fill:var(--feature)">feature/HU</text>
+        <text class="lbl" x="10" y="114" style="fill:var(--dev)">dev</text>
+        <text class="lbl" x="10" y="184" style="fill:var(--feature)">huN</text>
         <line x1="150" y1="40" x2="800" y2="40" stroke="var(--main)" stroke-width="3"/>
-        <path d="M150 40 C190 40,190 110,230 110 L740 110" fill="none" stroke="var(--develop)" stroke-width="3"/>
+        <path d="M150 40 C190 40,190 110,230 110 L740 110" fill="none" stroke="var(--dev)" stroke-width="3"/>
         <path d="M270 110 C300 110,300 180,330 180 L410 180 C440 180,440 110,470 110" fill="none" stroke="var(--feature)" stroke-width="3"/>
         <path d="M500 110 C530 110,530 180,560 180 L620 180 C650 180,650 110,680 110" fill="none" stroke="var(--feature)" stroke-width="3"/>
-        <path d="M700 110 C730 110,730 40,760 40" fill="none" stroke="var(--develop)" stroke-width="3" stroke-dasharray="6 4"/>
+        <path d="M700 110 C730 110,730 40,760 40" fill="none" stroke="var(--dev)" stroke-width="3" stroke-dasharray="6 4"/>
         <!-- commits -->
         <circle cx="150" cy="40" r="7" fill="var(--main)"/>
         <circle cx="760" cy="40" r="8" fill="var(--main)"/>
-        <circle cx="270" cy="110" r="6" fill="var(--develop)"/>
-        <circle cx="470" cy="110" r="6" fill="var(--develop)"/>
-        <circle cx="500" cy="110" r="6" fill="var(--develop)"/>
-        <circle cx="680" cy="110" r="6" fill="var(--develop)"/>
+        <circle cx="270" cy="110" r="6" fill="var(--dev)"/>
+        <circle cx="470" cy="110" r="6" fill="var(--dev)"/>
+        <circle cx="500" cy="110" r="6" fill="var(--dev)"/>
+        <circle cx="680" cy="110" r="6" fill="var(--dev)"/>
         <circle cx="350" cy="180" r="6" fill="var(--feature)"/>
         <circle cx="395" cy="180" r="6" fill="var(--feature)"/>
         <circle cx="590" cy="180" r="6" fill="var(--feature)"/>
@@ -140,19 +140,19 @@ a.card:hover, a.card:focus-visible { border-color: var(--feature); outline: none
     <div class="board">
       <div class="col">
         <div class="col-head"><h3>Por hacer <span class="count">3</span></h3><span class="where">Aún sin rama</span></div>
-        <a class="card" href="https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-lista-tareas/blob/develop/hu/HU-04-editar-tarea.md"><span class="id">HU-04</span><span class="name">Editar una tarea</span><span class="br">feature/HU-04-editar-tarea</span></a>
-        <a class="card" href="https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-lista-tareas/blob/develop/hu/HU-05-eliminar-tarea.md"><span class="id">HU-05</span><span class="name">Eliminar una tarea</span><span class="br">feature/HU-05-eliminar-tarea</span></a>
-        <a class="card" href="https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-lista-tareas/blob/develop/hu/HU-06-guardar-tareas.md"><span class="id">HU-06</span><span class="name">Guardar tareas al cerrar el navegador</span><span class="br">feature/HU-06-guardar-tareas</span></a>
+        <a class="card" href="https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-lista-tareas/blob/dev/hu/HU-04-editar-tarea.md"><span class="id">HU-04</span><span class="name">Editar una tarea</span><span class="br">hu4</span></a>
+        <a class="card" href="https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-lista-tareas/blob/dev/hu/HU-05-eliminar-tarea.md"><span class="id">HU-05</span><span class="name">Eliminar una tarea</span><span class="br">hu5</span></a>
+        <a class="card" href="https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-lista-tareas/blob/dev/hu/HU-06-guardar-tareas.md"><span class="id">HU-06</span><span class="name">Guardar tareas al cerrar el navegador</span><span class="br">hu6</span></a>
       </div>
       <div class="col">
         <div class="col-head"><h3>En desarrollo <span class="count">0</span></h3><span class="where">En su rama feature</span></div>
         <p class="where">Aquí va la HU en la que se está trabajando.</p>
       </div>
       <div class="col">
-        <div class="col-head"><h3>En pruebas <span class="count">3</span></h3><span class="where">Unida a develop</span></div>
-        <a class="card c-develop" href="https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-lista-tareas/blob/develop/hu/HU-03-completar-tarea.md"><span class="id">HU-03</span><span class="name">Marcar tarea como completada</span><span class="resumen">Casilla con check de Figma, texto tachado, funciona con teclado. 4 pruebas nuevas.</span><span class="br">develop · PR #5</span></a>
-        <a class="card c-develop" href="https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-lista-tareas/blob/develop/hu/HU-02-ver-lista.md"><span class="id">HU-02</span><span class="name">Ver la lista de tareas</span><span class="resumen">Resumen "N pendientes · M completadas" y estado vacío. 3 pruebas nuevas.</span><span class="br">develop · PR #4</span></a>
-        <a class="card c-develop" href="https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-lista-tareas/blob/develop/hu/HU-01-crear-tarea.md"><span class="id">HU-01</span><span class="name">Crear una tarea</span><span class="resumen">Campo + botón Agregar (deshabilitado si está vacío), Enter para agregar. 4 pruebas.</span><span class="br">develop · PR #3</span></a>
+        <div class="col-head"><h3>En pruebas <span class="count">3</span></h3><span class="where">Unida a dev</span></div>
+        <a class="card c-dev" href="https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-lista-tareas/blob/dev/hu/HU-03-completar-tarea.md"><span class="id">HU-03</span><span class="name">Marcar tarea como completada</span><span class="resumen">Casilla con check de Figma, texto tachado, funciona con teclado. 4 pruebas nuevas.</span><span class="br">dev · PR #5</span></a>
+        <a class="card c-dev" href="https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-lista-tareas/blob/dev/hu/HU-02-ver-lista.md"><span class="id">HU-02</span><span class="name">Ver la lista de tareas</span><span class="resumen">Resumen "N pendientes · M completadas" y estado vacío. 3 pruebas nuevas.</span><span class="br">dev · PR #4</span></a>
+        <a class="card c-dev" href="https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-lista-tareas/blob/dev/hu/HU-01-crear-tarea.md"><span class="id">HU-01</span><span class="name">Crear una tarea</span><span class="resumen">Campo + botón Agregar (deshabilitado si está vacío), Enter para agregar. 4 pruebas.</span><span class="br">dev · PR #3</span></a>
       </div>
       <div class="col">
         <div class="col-head"><h3>Entregado <span class="count">0</span></h3><span class="where">En main</span></div>
@@ -164,16 +164,17 @@ a.card:hover, a.card:focus-visible { border-color: var(--feature); outline: none
   <section>
     <h2>Pasos para cada HU</h2>
     <ol class="steps">
-      <li><strong>Partir de develop actualizado</strong><pre>git checkout develop
+      <li><strong>Partir de dev actualizado</strong><pre>git checkout dev
 git pull</pre></li>
-      <li><strong>Crear la rama de la HU</strong><pre>git checkout -b feature/HU-01-crear-tarea</pre></li>
-      <li><strong>Trabajar y hacer commits con el número de la HU</strong><pre>git commit -m "HU-01: agrega formulario de tarea"</pre></li>
-      <li><strong>Terminada la HU, unirla a develop y probar</strong><pre>git checkout develop
-git merge feature/HU-01-crear-tarea</pre></li>
-      <li><strong>Cuando develop está probado, entregar a main con un Pull Request</strong><pre>gh pr create --base main --head develop --title "Entrega v1.0"
+      <li><strong>Crear la rama de la HU (mismo nombre en código y docs)</strong><pre>git checkout -b hu4</pre></li>
+      <li><strong>Trabajar y hacer commits con el número de la HU</strong><pre>git commit -m "HU-04: modo edición de una tarea"</pre></li>
+      <li><strong>Terminada y probada la HU, un solo PR a dev (CI en verde)</strong><pre>git push -u origin hu4
+gh pr create --base dev --head hu4 --title "HU-04: Editar una tarea"
+gh pr merge --merge</pre></li>
+      <li><strong>Solo en una entrega a producción: PR de dev a main</strong><pre>gh pr create --base main --head dev --title "Release: v1.0"
 gh pr merge --merge</pre></li>
     </ol>
   </section>
 
-  <div class="never"><strong>Regla de oro:</strong> nunca se hace commit directo en <code>main</code>. Si estás en <code>main</code>, cambia a <code>develop</code> o a tu rama de HU antes de trabajar.</div>
+  <div class="never"><strong>Regla de oro:</strong> nunca se hace commit directo en <code>main</code>. Si estás en <code>main</code>, cambia a <code>dev</code> o a tu rama de HU antes de trabajar.</div>
 </div>

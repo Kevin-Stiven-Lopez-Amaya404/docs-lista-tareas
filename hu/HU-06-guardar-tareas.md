@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Estado** | Por hacer |
-| **Rama** | `feature/HU-06-guardar-tareas` |
+| **Rama** | `hu6` |
 | **PR** | — |
 | **Diseño** | No tiene interfaz |
 

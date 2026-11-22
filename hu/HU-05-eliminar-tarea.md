@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Estado** | Por hacer |
-| **Rama** | `feature/HU-05-eliminar-tarea` |
+| **Rama** | `hu5` |
 | **PR** | — |
 | **Diseño** | [Principal](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=1-41) (ícono de eliminar en cada tarea) |
 
