@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Estado** | Por hacer |
+| **Estado** | En desarrollo (desde 2026-11-22) |
 | **Rama** | `hu6` |
 | **PR** | — |
 | **Diseño** | No tiene interfaz |
