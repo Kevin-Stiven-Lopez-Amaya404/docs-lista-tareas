@@ -2,7 +2,7 @@
 
 Documentación del proyecto [lista-tareas](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas). Aquí se registra lo que se va construyendo, HU por HU.
 
-- **App (producción):** https://kevin-stiven-lopez-amaya404.github.io/lista-tareas/ — se publica sola en cada entrega a `main`
+- **App (producción, Vercel):** https://lista-tareas-sage.vercel.app/ — se publica sola en cada entrega a `main`; cada PR tiene su vista previa en Vercel
 - **Tablero:** https://kevin-stiven-lopez-amaya404.github.io/docs-lista-tareas/
 - **Código:** https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas
 - **Diseño (Figma):** https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV

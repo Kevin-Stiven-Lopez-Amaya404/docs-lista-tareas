@@ -2,6 +2,20 @@
 
 Cada entrega es un PR de `dev` a `main` en lista-tareas, con su etiqueta y su Release en GitHub. La más reciente va arriba.
 
+## v1.2.0 — 2026-11-22
+
+Publicada en Vercel: https://lista-tareas-sage.vercel.app/ ([Release](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/releases/tag/v1.2.0) · [PR #24](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/24)).
+
+| Cambio | Qué hace | PR |
+|---|---|---|
+| [HU-09](hu/HU-09-filtrar-tareas.md) | Filtros Todas / Pendientes / Completadas, mensaje sin resultados y foco accesible | [#20](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/20) |
+| [HU-10](hu/HU-10-borrar-completadas.md) | Botón "Borrar completadas (N)" junto a los filtros | [#21](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/21) |
+| Despliegue | Vercel en lugar de GitHub Pages, con `vercel.json` (cabeceras de seguridad y caché) | [#22](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/22) |
+
+**Calidad:** 31 pruebas y build en verde. Verificado en producción: filtros, "Borrar completadas", cabeceras de seguridad activas (CSP, HSTS, `X-Frame-Options`, `nosniff`) y caché inmutable para `/assets/`, sin errores en la consola.
+
+**Pendiente:** el diseño de la HU-10 en Figma, por el límite del conector de Figma en el plan Starter.
+
 ## v1.1.1 — 2026-11-22
 
 La app queda publicada: https://kevin-stiven-lopez-amaya404.github.io/lista-tareas/ ([Release](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/releases/tag/v1.1.1) · [PR #19](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/19)).

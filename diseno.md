@@ -13,6 +13,7 @@ El diseño se hace en Figma y es la fuente de verdad: la interfaz se construye a
 | Editando | 390 × 844 | HU-04 | [Abrir](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=2-127) |
 | Escritorio | 1440 × 900 | HU-07 | [Abrir](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=17-82) |
 | Estados de interacción | tablero | HU-08 | [Abrir](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=19-130) |
+| Filtro sin resultados | 390 × 844 | HU-09 | [Abrir](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=21-153) |
 
 **Escritorio (desde 768px):** columna centrada de 640px, `espacio/64` arriba y abajo, título Bold 36 y resumen Regular 16. El resto igual que en celular.
 
@@ -24,6 +25,8 @@ El diseño se hace en Figma y es la fuente de verdad: la interfaz se construye a
 |---|---|---|
 | Tarea | `estado`: pendiente, completada, editando | [Abrir](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=1-40) |
 | Botón | `tipo`: primario, secundario · `estado`: normal, hover, foco, deshabilitado (solo primario) | [Abrir](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=2-61) |
+| Opción de filtro | `activo`: sí, no · propiedad Texto | [Abrir](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=21-131) |
+| Filtros | grupo con Todas, Pendientes, Completadas (cambiar `activo` en cada opción) | [Abrir](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=21-132) |
 
 ## Tokens (colección "Tokens" en Figma)
 
