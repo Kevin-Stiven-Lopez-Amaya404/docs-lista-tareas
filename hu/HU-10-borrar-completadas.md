@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Estado** | En pruebas (en `dev` desde 2026-11-22) |
+| **Estado** | Entregado en v1.2.0 (2026-11-22) |
 | **Rama** | `hu10` |
 | **PR** | [lista-tareas#21](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/21) |
 | **Diseño** | **Pendiente en Figma**: se alcanzó el límite del conector de Figma (plan Starter). Falta la variante `tipo=texto-peligro` del Botón y la "Barra de lista" en Principal y Escritorio |
