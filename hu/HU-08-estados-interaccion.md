@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Estado** | En pruebas (en `dev` desde 2026-11-22) |
+| **Estado** | Entregado en v1.1.0 (2026-11-22) |
 | **Rama** | `hu8` |
 | **PR** | [lista-tareas#13](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/13) |
 | **Diseño** | [Estados de interacción](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=19-130) · estilo de efecto `Foco/Anillo` · variantes hover/foco del [Botón](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=2-61) |
