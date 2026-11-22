@@ -3,7 +3,7 @@
 | | |
 |---|---|
 | **Estado** | Por hacer · En desarrollo · En pruebas · Entregado |
-| **Rama** | `feature/HU-XX-descripcion` |
+| **Rama** | `huN` |
 | **PR** | — |
 | **Diseño** | Enlace al frame de Figma |
 
@@ -17,4 +17,4 @@ Como **usuario**, quiero **...** para **...**.
 
 ## Implementación
 
-_Se completa al fusionar en `develop`: qué se hizo, archivos principales, pruebas agregadas._
+_Se completa al fusionar en `dev`: qué se hizo, archivos principales, pruebas agregadas._
