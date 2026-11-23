@@ -172,7 +172,7 @@ a.card:hover, a.card:focus-visible { border-color: var(--feature); outline: none
     <ol class="steps">
       <li><strong>Partir de dev actualizado</strong><pre>git checkout dev
 git pull</pre></li>
-      <li><strong>Crear la rama de la HU en lista-tareas (la documentación va aparte, en una rama docs/tema)</strong><pre>git checkout -b hu4</pre></li>
+      <li><strong>Crear la rama de la HU en lista-tareas (la documentación va aparte, en una rama efímera hacia main del repo de docs)</strong><pre>git checkout -b hu4</pre></li>
       <li><strong>Trabajar y hacer commits con el número de la HU</strong><pre>git commit -m "HU-04: modo edición de una tarea"</pre></li>
       <li><strong>Terminada y probada la HU, un solo PR a dev (CI en verde)</strong><pre>git push -u origin hu4
 gh pr create --base dev --head hu4 --title "HU-04: Editar una tarea"
