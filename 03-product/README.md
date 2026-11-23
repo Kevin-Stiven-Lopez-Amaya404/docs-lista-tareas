@@ -12,4 +12,4 @@ Para qué existe la app, qué se ha entregado y qué podría venir.
 |---------|-------------|--------|
 | [vision.md](./vision.md) | Visión y principios | 🟢 |
 | [roadmap.md](./roadmap.md) | Versiones entregadas y siguientes | 🟢 |
-| [product-backlog.md](./product-backlog.md) | Backlog de HU | 🟡 |
+| [product-backlog.md](./product-backlog.md) | Backlog de HU (cerrado) | 🟢 |
