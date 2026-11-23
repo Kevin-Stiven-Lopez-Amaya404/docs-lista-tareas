@@ -1,29 +1,18 @@
-<!-- PLANTILLA: copiar como user-stories/HU-XX-titulo-corto.md (los enlaces relativos asumen esa carpeta) y borrar esta línea -->
-# HU-XX: Título corto
+<!-- PLANTILLA: copiar este bloque al final de user-stories.md, añadir la fila en la tabla del inicio y borrar esta línea -->
+
+## HU-XX
+
+**Título corto**
 
 | | |
 |---|---|
-| **Estado** | Por hacer · En desarrollo · En pruebas · Entregado |
-| **Rama** | `huN` |
-| **PR** | — |
+| **Estado** | Por hacer · En desarrollo · En pruebas · Entregado en vX.Y.Z |
+| **PR (código)** | — |
 | **Diseño** | Enlace al frame de Figma |
-
-## Historia
+| **Requisito** | RF-XX / NFR-XX |
 
 Como **usuario**, quiero **...** para **...**.
 
-## Criterios de aceptación
+**Criterios de aceptación**
 
 - [ ] ...
-
-## Implementación
-
-_Se completa al fusionar en `dev`: qué se hizo, archivos principales, pruebas agregadas._
-
-## Trazabilidad
-
-| Tipo | ID | Referencia |
-|------|----|-----------|
-| Requisito | RF-XX / NFR-XX | [functional.md](../functional.md) · [non-functional.md](../non-functional.md) |
-| Regla de negocio | RN-XX | [02-domain](../../02-domain/entities-and-rules.md) |
-| ADR | ADR-NNN | [records](../../05-architecture/decisions/records/README.md) |

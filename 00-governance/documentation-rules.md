@@ -6,12 +6,12 @@
 
 - Carpetas numeradas `NN-tema/`, en minúsculas y en inglés, igual que la estructura de referencia.
 - Archivos en `kebab-case.md`. Las plantillas empiezan con `_template-`.
-- Historias: `04-requirements/user-stories/HU-XX-titulo-corto.md`. Decisiones: `05-architecture/decisions/records/ADR-NNN-titulo-corto.md`.
+- Historias: una sección `## HU-XX` en `04-requirements/user-stories.md` (no hay un archivo por HU). Decisiones: `05-architecture/decisions/records/ADR-NNN-titulo-corto.md`.
 - El contenido se escribe en español.
 
 ## Cabecera mínima
 
-Cada documento (salvo fichas de HU, ADR y plantillas, que tienen la suya) empieza con:
+Cada documento (salvo ADR y plantillas, que tienen la suya) empieza con:
 
 ```
 # Título

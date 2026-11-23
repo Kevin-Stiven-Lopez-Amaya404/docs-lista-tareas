@@ -5,9 +5,9 @@
 ## Dentro del alcance
 
 - Crear, ver, completar, editar y eliminar tareas ([HU-01 a HU-05](../04-requirements/user-stories.md)).
-- Guardar las tareas en el navegador ([HU-06](../04-requirements/user-stories/HU-06-guardar-tareas.md)).
-- Diseño adaptado a celular y escritorio, accesible con teclado ([HU-07](../04-requirements/user-stories/HU-07-version-escritorio.md), [HU-08](../04-requirements/user-stories/HU-08-estados-interaccion.md)).
-- Filtrar y borrar completadas ([HU-09](../04-requirements/user-stories/HU-09-filtrar-tareas.md), [HU-10](../04-requirements/user-stories/HU-10-borrar-completadas.md)).
+- Guardar las tareas en el navegador ([HU-06](../04-requirements/user-stories.md#hu-06)).
+- Diseño adaptado a celular y escritorio, accesible con teclado ([HU-07](../04-requirements/user-stories.md#hu-07), [HU-08](../04-requirements/user-stories.md#hu-08)).
+- Filtrar y borrar completadas ([HU-09](../04-requirements/user-stories.md#hu-09), [HU-10](../04-requirements/user-stories.md#hu-10)).
 
 ## Fuera del alcance
 

@@ -35,4 +35,4 @@ Se decide guardar en **`localStorage`** con la clave versionada `lista-tareas:v1
 
 ## Referencias
 
-- Ficha: [HU-06](../../../04-requirements/user-stories/HU-06-guardar-tareas.md)
+- Historia: [HU-06](../../../04-requirements/user-stories.md#hu-06)

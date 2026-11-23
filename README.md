@@ -2,7 +2,7 @@
 
 Repositorio de documentación del proyecto **[lista-tareas](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas)**, una app web para anotar tareas que se guardan en el navegador.
 
-Este repositorio es la fuente de verdad documental del proyecto. Sigue el mismo flujo de ramas que el código (`huN → dev → main`); ver [convenciones de Git](./00-governance/git-conventions.md).
+Este repositorio es la fuente de verdad documental del proyecto. Se organiza por secciones, no por HU: cada cambio entra por una rama `docs/tema` → PR a `dev`, y `main` solo cambia en una entrega; ver [convenciones de Git](./00-governance/git-conventions.md).
 
 - **App (producción, Vercel):** https://lista-tareas-sage.vercel.app/
 - **Tablero:** https://kevin-stiven-lopez-amaya404.github.io/docs-lista-tareas/ ([`index.html`](./index.html))

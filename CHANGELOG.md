@@ -8,8 +8,8 @@ Publicada en Vercel: https://lista-tareas-sage.vercel.app/ ([Release](https://gi
 
 | Cambio | Qué hace | PR |
 |---|---|---|
-| [HU-09](04-requirements/user-stories/HU-09-filtrar-tareas.md) | Filtros Todas / Pendientes / Completadas, mensaje sin resultados y foco accesible | [#20](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/20) |
-| [HU-10](04-requirements/user-stories/HU-10-borrar-completadas.md) | Botón "Borrar completadas (N)" junto a los filtros | [#21](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/21) |
+| [HU-09](04-requirements/user-stories.md#hu-09) | Filtros Todas / Pendientes / Completadas, mensaje sin resultados y foco accesible | [#20](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/20) |
+| [HU-10](04-requirements/user-stories.md#hu-10) | Botón "Borrar completadas (N)" junto a los filtros | [#21](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/21) |
 | Despliegue | Vercel en lugar de GitHub Pages, con `vercel.json` (cabeceras de seguridad y caché) | [#22](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/22) |
 
 **Calidad:** 31 pruebas y build en verde. Verificado en producción: filtros, "Borrar completadas", cabeceras de seguridad activas (CSP, HSTS, `X-Frame-Options`, `nosniff`) y caché inmutable para `/assets/`, sin errores en la consola.
@@ -31,8 +31,8 @@ Diseño completo: versión de escritorio y estados de interacción ([Release](ht
 
 | HU | Qué hace | PR |
 |---|---|---|
-| [HU-07](04-requirements/user-stories/HU-07-version-escritorio.md) | Versión de escritorio: desde 768px, columna centrada de 640px, más aire y título 36px | [#12](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/12) |
-| [HU-08](04-requirements/user-stories/HU-08-estados-interaccion.md) | Hover según Figma (solo con mouse) y anillo de foco único en todos los controles | [#13](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/13) |
+| [HU-07](04-requirements/user-stories.md#hu-07) | Versión de escritorio: desde 768px, columna centrada de 640px, más aire y título 36px | [#12](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/12) |
+| [HU-08](04-requirements/user-stories.md#hu-08) | Hover según Figma (solo con mouse) y anillo de foco único en todos los controles | [#13](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/13) |
 
 **Calidad:** 23 pruebas automáticas y build en verde. Sin desborde de 320 a 1920px; hover y foco verificados en el navegador; contraste mínimo 6.14:1.
 
@@ -44,12 +44,12 @@ Primera entrega a producción ([Release](https://github.com/Kevin-Stiven-Lopez-A
 
 | HU | Qué hace | PR |
 |---|---|---|
-| [HU-01](04-requirements/user-stories/HU-01-crear-tarea.md) | Crear una tarea: campo y botón Agregar (deshabilitado si está vacío), Enter para agregar | [#3](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/3) |
-| [HU-02](04-requirements/user-stories/HU-02-ver-lista.md) | Ver la lista: resumen "N pendientes · M completadas" y estado vacío | [#4](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/4) |
-| [HU-03](04-requirements/user-stories/HU-03-completar-tarea.md) | Marcar como completada: casilla con check, texto tachado, con teclado | [#5](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/5) |
-| [HU-04](04-requirements/user-stories/HU-04-editar-tarea.md) | Editar una tarea: Guardar/Cancelar, Enter/Escape, una a la vez | [#7](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/7) |
-| [HU-05](04-requirements/user-stories/HU-05-eliminar-tarea.md) | Eliminar una tarea: al instante, con foco accesible | [#8](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/8) |
-| [HU-06](04-requirements/user-stories/HU-06-guardar-tareas.md) | Guardar tareas en el navegador, tolerante a datos dañados | [#9](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/9) |
+| [HU-01](04-requirements/user-stories.md#hu-01) | Crear una tarea: campo y botón Agregar (deshabilitado si está vacío), Enter para agregar | [#3](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/3) |
+| [HU-02](04-requirements/user-stories.md#hu-02) | Ver la lista: resumen "N pendientes · M completadas" y estado vacío | [#4](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/4) |
+| [HU-03](04-requirements/user-stories.md#hu-03) | Marcar como completada: casilla con check, texto tachado, con teclado | [#5](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/5) |
+| [HU-04](04-requirements/user-stories.md#hu-04) | Editar una tarea: Guardar/Cancelar, Enter/Escape, una a la vez | [#7](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/7) |
+| [HU-05](04-requirements/user-stories.md#hu-05) | Eliminar una tarea: al instante, con foco accesible | [#8](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/8) |
+| [HU-06](04-requirements/user-stories.md#hu-06) | Guardar tareas en el navegador, tolerante a datos dañados | [#9](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/9) |
 
 También: configuración inicial (Vite, Vitest, CI), flujo de ramas `dev`/`huN`.
 

@@ -1,14 +1,14 @@
-## HU
+## Qué cambia
 
-<!-- Ej.: HU-11 · código en lista-tareas#NN · rama huN → dev -->
+<!-- Secciones tocadas y por qué. Ej.: 04-requirements: HU-11 (código en lista-tareas#NN) -->
 
-## Qué se documenta
+## Lista de verificación
 
-- [ ] Ficha `04-requirements/user-stories/HU-XX-*.md`: estado, PR, criterios marcados e "Implementación"
-- [ ] `04-requirements/user-stories.md` y `traceability-matrix.md`
-- [ ] Tablero (`index.html`): tarjeta en la columna correcta con resumen corto
-- [ ] `12-ux-ui/design-system.md`, `02-domain`, `06-data` o un ADR nuevo si hubo cambios
+- [ ] Las secciones de la [matriz de touchpoints](../00-governance/docs-touchpoints-matrix.md) que aplican están actualizadas
+- [ ] Cada archivo nuevo está registrado en el `README.md` de su sección
+- [ ] Fechas de "Última actualización" al día en lo que se tocó
+- [ ] Enlaces relativos funcionan
+- [ ] Sin datos sensibles
 - [ ] `CHANGELOG.md` y `03-product/roadmap.md` solo en una entrega
-- [ ] Cada archivo nuevo registrado en el `README.md` de su sección
 
-<!-- PR hacia `dev`. A `main` solo llega un PR "Release: vX.Y.Z" desde `dev`. Ver 00-governance/docs-touchpoints-matrix.md -->
+<!-- Rama docs/tema → dev. A `main` solo llega un PR "Release: vX.Y.Z" desde `dev`. -->

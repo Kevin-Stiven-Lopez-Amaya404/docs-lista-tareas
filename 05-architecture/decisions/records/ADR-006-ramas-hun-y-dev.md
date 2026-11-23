@@ -1,6 +1,6 @@
 # ADR-006: Flujo de ramas huN → dev → main
 
-**Estado:** ACCEPTED (reemplaza el flujo `main` / `develop` / `feature/HU-XX-…`)
+**Estado:** ACCEPTED para el código; la parte de docs está reemplazada por [ADR-010](ADR-010-docs-no-se-trabajan-por-hu.md)
 **Fecha:** 2026-11-22
 **Autores:** Kevin-Stiven-Lopez-Amaya404
 **HU relacionada:** Todas

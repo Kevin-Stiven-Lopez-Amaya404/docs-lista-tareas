@@ -16,8 +16,8 @@
 
 | Estado | Cuándo |
 |--------|--------|
-| Por hacer | Está en el [backlog](../03-product/product-backlog.md) y cumple la [Definition of Ready](./definition-of-ready.md) |
-| En desarrollo | Existe la rama `huN` |
+| Por hacer | Tiene su sección en [user-stories.md](../04-requirements/user-stories.md) y cumple la [Definition of Ready](./definition-of-ready.md) |
+| En desarrollo | Existe la rama `huN` en lista-tareas |
 | En pruebas | Fusionada en `dev` en lista-tareas |
 | Entregado en vX.Y.Z | Llegó a `main` en una entrega |
 
