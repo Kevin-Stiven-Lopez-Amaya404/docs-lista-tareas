@@ -9,7 +9,7 @@
 | `src/tareas.test.js` | Toda la lógica pura: agregar, completar, editar, eliminar, borrar completadas, filtrar, resumen, y que nunca se modifica la lista original |
 | `src/almacenamiento.test.js` | Cargar y guardar con un almacén falso: JSON dañado, elementos inválidos, almacenamiento bloqueado |
 
-31 pruebas en v1.2.0. Corren en el CI en cada PR ([10-devops/ci-cd.md](../10-devops/ci-cd.md)).
+31 pruebas en v1.2.1. Corren en el CI en cada PR ([10-devops/ci-cd.md](../10-devops/ci-cd.md)).
 
 ## Verificación manual en navegador
 

@@ -28,6 +28,8 @@ El diseño se hace en Figma y es la fuente de verdad: la interfaz se construye a
 | Opción de filtro | `activo`: sí, no · propiedad Texto | [Abrir](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=21-131) |
 | Filtros | grupo con Todas, Pendientes, Completadas (cambiar `activo` en cada opción) | [Abrir](https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV?node-id=21-132) |
 
+**Favicon:** `public/favicon.svg` en lista-tareas, la casilla marcada del componente Tarea (22px, `radio/6`, `color/primario` e `icon/check`).
+
 ## Tokens (colección "Tokens" en Figma)
 
 En el código se usan como variables CSS con el mismo nombre (`color/fondo` → `--color-fondo`).

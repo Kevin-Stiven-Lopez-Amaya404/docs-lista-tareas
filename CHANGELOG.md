@@ -2,6 +2,20 @@
 
 Cada entrega es un PR de `dev` a `main` en lista-tareas, con su etiqueta y su Release en GitHub. La más reciente va arriba.
 
+## v1.2.1 — 2026-11-23 · entrega final
+
+Cierre del proyecto. Publicada en Vercel: https://lista-tareas-sage.vercel.app/ ([Release](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/releases/tag/v1.2.1) · [PR #28](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/28)).
+
+| Cambio | Qué hace | PR |
+|---|---|---|
+| Favicon | Ícono de pestaña con la casilla marcada del diseño; quita el 404 de `/favicon.ico` | [#26](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/26) |
+| Plantilla de PR | Apunta al nuevo flujo de documentación | [#25](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/25) |
+| Documentación | Estructura por secciones como code-sena/design-software-docs, HU en un solo documento y repo de docs solo en `main` | [docs#32](https://github.com/Kevin-Stiven-Lopez-Amaya404/docs-lista-tareas/pull/32) |
+
+**Calidad:** 31 pruebas y build en verde, 0 vulnerabilidades en `npm audit`. Revisión en producción antes de la entrega: crear, completar, editar (Escape cancela), filtros, borrar completadas, persistencia al recargar y datos dañados, sin errores en la consola. Después de la entrega: favicon publicado y las 6 cabeceras de seguridad activas.
+
+**Alcance cerrado:** HU-01 a HU-10. **Pendiente conocido:** el diseño de la HU-10 en Figma ([R-01](15-project-control/risks.md)).
+
 ## v1.2.0 — 2026-11-22
 
 Publicada en Vercel: https://lista-tareas-sage.vercel.app/ ([Release](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/releases/tag/v1.2.0) · [PR #24](https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas/pull/24)).

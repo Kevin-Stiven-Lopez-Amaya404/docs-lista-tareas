@@ -7,7 +7,7 @@
 - **Para quién:** una persona que quiere una lista rápida en el navegador, sin cuentas ni instalación.
 - **Dónde:** en el navegador, en celular y en escritorio, con mouse y con teclado.
 - **Datos:** se guardan en el propio navegador (`localStorage`); no hay servidor.
-- **Producción:** https://lista-tareas-sage.vercel.app/ (v1.2.0, 10 HU entregadas).
+- **Producción:** https://lista-tareas-sage.vercel.app/ (v1.2.1, 10 HU entregadas). **Proyecto finalizado** el 2026-11-23.
 
 | Recurso | Enlace |
 |---------|--------|
