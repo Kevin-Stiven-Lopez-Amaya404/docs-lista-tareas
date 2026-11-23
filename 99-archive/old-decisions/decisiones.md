@@ -39,7 +39,7 @@ El botón **Agregar** se deshabilita mientras no haya texto, para evitar tareas 
 
 ## 2026-11-22 — Diseño en Figma
 
-El diseño se hace en Figma y es la fuente de verdad. Los tokens de Figma se pasan al código como variables CSS. Ver [diseno.md](diseno.md).
+El diseño se hace en Figma y es la fuente de verdad. Los tokens de Figma se pasan al código como variables CSS. Ver [design-system.md](../../12-ux-ui/design-system.md).
 
 ## 2026-11-22 — Stack: Vite + JavaScript + Vitest
 
