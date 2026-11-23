@@ -11,7 +11,7 @@ Una HU está **terminada** (En pruebas) cuando:
 - [ ] Se verificó en el navegador a 390px y 1440px, con mouse y con teclado.
 - [ ] Coincide con el diseño de Figma (o el pendiente está anotado en [user-stories.md](../04-requirements/user-stories.md) y en [riesgos](../15-project-control/risks.md)).
 - [ ] El PR `huN → dev` está fusionado en lista-tareas.
-- [ ] Las secciones de docs de la [matriz de touchpoints](./docs-touchpoints-matrix.md) están actualizadas en `dev` (rama `docs/tema` → PR).
+- [ ] Las secciones de docs de la [matriz de touchpoints](./docs-touchpoints-matrix.md) están actualizadas en `main` de docs (rama efímera → PR).
 
 Está **Entregada** cuando llegó a `main` en una entrega y se comprobó en producción.
 

@@ -2,7 +2,7 @@
 
 > Estado: 🟢 Estable | Última actualización: 2026-11-23
 > Autor: Kevin-Stiven-Lopez-Amaya404 | Equipo: lista-tareas
-La documentación se actualiza por **sección**, no por HU. Cada fila es lo que se toca en una rama `docs/tema` ([git-conventions.md](./git-conventions.md#docs-lista-tareas-documentación)).
+La documentación se actualiza por **sección**, no por HU. Cada fila es lo que se toca en una rama efímera → PR a `main` ([git-conventions.md](./git-conventions.md#docs-lista-tareas-documentación)).
 
 | Cambio | Secciones que se actualizan |
 |--------|-----------------------------|
@@ -16,6 +16,6 @@ La documentación se actualiza por **sección**, no por HU. Cada fila es lo que 
 | Cambian las pruebas | [11-quality/testing-strategy.md](../11-quality/testing-strategy.md) |
 | Cambia lo que ve el usuario | [14-training/user-manual.md](../14-training/user-manual.md) |
 | Aparece un riesgo o una duda | [15-project-control](../15-project-control/) |
-| Entrega a producción | Estados "Entregado en vX.Y.Z", tablero, [CHANGELOG](../CHANGELOG.md), [roadmap](../03-product/roadmap.md). PR `dev → main` aquí también |
+| Entrega a producción | Estados "Entregado en vX.Y.Z", tablero, [CHANGELOG](../CHANGELOG.md), [roadmap](../03-product/roadmap.md). |
 
 Varias filas pueden ir en la misma rama y el mismo PR.

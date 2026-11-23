@@ -2,7 +2,7 @@
 
 > Estado: 🟢 Estable | Última actualización: 2026-11-23
 > Autor: Kevin-Stiven-Lopez-Amaya404 | Equipo: lista-tareas
-Los dos repos comparten `main` (producción) y `dev` (integración), pero **solo el código se trabaja por HU**. La documentación se organiza por secciones y se actualiza con ramas cortas por tema ([ADR-006](../05-architecture/decisions/records/ADR-006-ramas-hun-y-dev.md), [ADR-010](../05-architecture/decisions/records/ADR-010-docs-no-se-trabajan-por-hu.md)).
+Hay **dos modelos de ramas**: el código se trabaja por HU con `dev` y `main`; la documentación se organiza por secciones y vive solo en `main` ([ADR-006](../05-architecture/decisions/records/ADR-006-ramas-hun-y-dev.md), [ADR-010](../05-architecture/decisions/records/ADR-010-docs-no-se-trabajan-por-hu.md)).
 
 ## lista-tareas (código)
 
@@ -21,18 +21,27 @@ dev ──► huN ──(PR huN → dev, al terminar la HU)──► dev ──(
 - Commits con el número de la HU: `HU-04: editar una tarea`.
 - Merge con `gh pr merge --merge`, sin `--delete-branch` en las ramas `huN`.
 
-## docs-lista-tareas (documentación)
+## docs-lista-tareas (documentación): solo `main`
+
+Igual que [code-sena/design-software-docs](https://github.com/code-sena/design-software-docs): el repo de docs **vive siempre en `main`**, sin `dev` ni ramas por HU. En reposo solo existe `main`.
 
 ```
-dev ──► docs/tema ──(PR → dev)──► dev ──(PR "Release: vX.Y.Z", solo en entregas)──► main
+main ──► rama efímera ──(PR → main)──► main   (y se borra la rama)
 ```
 
-| Rama | Uso | Se borra |
-|------|-----|----------|
-| `main` | Lo publicado (GitHub Pages del tablero). Solo recibe el PR "Release" desde `dev`. Protegida | — |
-| `dev` | Documentación al día. Solo recibe PR. Protegida | — |
-| `docs/tema` (`docs/requisitos-hu11`, `docs/arquitectura`…) | Un cambio de documentación, de una o varias secciones | Sí, tras el merge |
-| `chore/descripcion` | Mantenimiento del repo y entregas | Sí, tras el merge |
+1. Crear una rama efímera desde `main` actualizado.
+2. Commit(s) y push.
+3. PR hacia `main`, revisar y fusionar con **merge** (se conservan los commits).
+4. Borrar la rama.
+
+| Tipo de rama | Cuándo | Ejemplo |
+|--------------|--------|---------|
+| `docs/…` | Actualizar documentos existentes | `docs/requisitos-hu11` |
+| `feat/…` | Documento o sección nueva | `feat/manual-tecnico` |
+| `fix/…` | Corregir contenido o enlaces | `fix/enlaces-tablero` |
+| `chore/…` | Reorganizar, renombrar o mantenimiento | `chore/estructura-docs` |
+
+**Historial:** las ramas `hu1`…`hu10` que se usaron antes de este modelo están conservadas como etiquetas `archivo/huN` (`git checkout archivo/hu4`), y sus PR siguen en GitHub ([ADR-010](../05-architecture/decisions/records/ADR-010-docs-no-se-trabajan-por-hu.md)).
 
 - No hay ramas `huN` ni fichas por HU: las HU son una sección más de [04-requirements/user-stories.md](../04-requirements/user-stories.md).
 - Commits que dicen qué sección cambia: `Requisitos: HU-11 en user-stories y trazabilidad`.
@@ -41,17 +50,15 @@ dev ──► docs/tema ──(PR → dev)──► dev ──(PR "Release: vX.Y
 ## Pull Requests (los dos repos)
 
 - Se usa la plantilla `.github/pull_request_template.md`. Las descripciones largas se pasan con `--body-file`.
-- Sin commits directos a `dev` ni a `main`.
+- Sin commits directos a `main` (ni a `dev` en el código).
 
 ## Entregas
 
-Solo cuando se decide explícitamente una entrega, en los dos repos a la vez:
+Solo cuando se decide explícitamente una entrega del código:
 
-1. Rama `chore/release-vX.Y.Z`: en la app `npm version X.Y.Z --no-git-tag-version`; en docs, estado "Entregado en vX.Y.Z" en [user-stories.md](../04-requirements/user-stories.md), tablero, [CHANGELOG](../CHANGELOG.md) y [roadmap](../03-product/roadmap.md).
-2. PR a `dev`, luego PR "Release: vX.Y.Z" `dev → main`.
-3. Tag anotado `vX.Y.Z` en `main` (los dos repos) y `gh release create` en la app.
-4. Back-merge con un PR `main → dev`.
-5. Comprobar el despliegue de Vercel en producción ([10-devops/ci-cd.md](../10-devops/ci-cd.md)).
+1. **Código:** rama `chore/release-vX.Y.Z` con `npm version X.Y.Z --no-git-tag-version` → PR a `dev` → PR "Release: vX.Y.Z" `dev → main` → tag anotado `vX.Y.Z` y `gh release create` → back-merge con un PR `main → dev`.
+2. **Docs:** rama `chore/release-vX.Y.Z` desde `main` con el estado "Entregado en vX.Y.Z" en [user-stories.md](../04-requirements/user-stories.md), tablero, [CHANGELOG](../CHANGELOG.md) y [roadmap](../03-product/roadmap.md) → PR a `main` → tag anotado `vX.Y.Z`.
+3. Comprobar el despliegue de Vercel en producción ([10-devops/ci-cd.md](../10-devops/ci-cd.md)).
 
 ## Finales de línea
 

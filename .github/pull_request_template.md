@@ -11,4 +11,4 @@
 - [ ] Sin datos sensibles
 - [ ] `CHANGELOG.md` y `03-product/roadmap.md` solo en una entrega
 
-<!-- Rama docs/tema → dev. A `main` solo llega un PR "Release: vX.Y.Z" desde `dev`. -->
+<!-- Rama efímera → main. Fusionar con merge y borrar la rama. -->

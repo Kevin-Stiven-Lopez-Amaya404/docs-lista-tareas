@@ -23,4 +23,4 @@
 
 ## Tablero
 
-El tablero es `index.html` en la raíz, publicado en GitHub Pages desde `main`. Cada HU tiene una tarjeta con un resumen corto y "vX.Y.Z · PR #N" (o "dev · PR #N" antes de la entrega). El estado del día a día se ve en la rama `dev`.
+El tablero es `index.html` en la raíz, publicado en GitHub Pages desde `main`. Cada HU tiene una tarjeta con un resumen corto y "vX.Y.Z · PR #N" (o "dev · PR #N" mientras la HU está en `dev` del código).

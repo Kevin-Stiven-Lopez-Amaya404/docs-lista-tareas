@@ -4,7 +4,7 @@ Este repositorio documenta lo que se construye en [lista-tareas](https://github.
 
 ## Regla de oro
 
-No trabajar directamente sobre `dev` ni `main` (están protegidas). Todo cambio entra por una rama `docs/tema` (o `chore/…`) y un Pull Request a `dev`. La documentación **no se trabaja por HU**: se actualizan las secciones que correspondan.
+No trabajar directamente sobre `main` (está protegida). Todo cambio entra por una rama efímera (`docs/…`, `feat/…`, `fix/…`, `chore/…`) y un Pull Request a `main`; la rama se borra al fusionar. La documentación **no se trabaja por HU**: se actualizan las secciones que correspondan.
 
 ## Estructura general
 
@@ -35,10 +35,10 @@ El `README.md` de cada carpeta es el índice de esa sección.
 
 1. Identifica la sección correcta según la tabla.
 2. Revisa [documentation-rules.md](./00-governance/documentation-rules.md).
-3. Crea la rama según [git-conventions.md](./00-governance/git-conventions.md): `docs/tema` (por ejemplo `docs/requisitos-hu11`).
+3. Crea la rama según [git-conventions.md](./00-governance/git-conventions.md): rama efímera desde `main` (por ejemplo `docs/requisitos-hu11`).
 4. Edita o crea el documento con la cabecera de estado, fecha y autor.
 5. Registra el archivo en el `README.md` de su sección.
-6. Abre el PR a `dev` y completa la plantilla.
+6. Abre el PR a `main`, completa la plantilla, fusiona con merge y borra la rama.
 
 ## Agregar una HU
 
