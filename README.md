@@ -9,6 +9,8 @@ Este repositorio es la fuente de verdad documental del proyecto. Se organiza por
 - **Código:** https://github.com/Kevin-Stiven-Lopez-Amaya404/lista-tareas
 - **Diseño (Figma):** https://www.figma.com/design/Gx9t5vMuidiEKMKpi1lfhV
 
+**Estado del proyecto:** finalizado en **v1.2.1** (2026-11-23), con HU-01 a HU-10 entregadas. Ver [CHANGELOG](./CHANGELOG.md).
+
 ## Reglas rápidas
 
 - Leer [CONTRIBUTING.md](./CONTRIBUTING.md) antes de agregar o mover documentos.
@@ -36,8 +38,8 @@ Este repositorio es la fuente de verdad documental del proyecto. Se organiza por
 | [12-ux-ui](./12-ux-ui/) | Design system (Figma y tokens) | 🟢 |
 | [13-operations](./13-operations/) | Observabilidad, incidentes y backups | ⚫ No aplica |
 | [14-training](./14-training/) | Manual de usuario y onboarding | 🟢 |
-| [15-project-control](./15-project-control/) | Riesgos y preguntas abiertas | 🟡 |
-| [16-technical-manuals](./16-technical-manuals/) | Manuales técnicos | 🔴 |
+| [15-project-control](./15-project-control/) | Riesgos y preguntas resueltas | 🟢 |
+| [16-technical-manuals](./16-technical-manuals/) | Dónde están los manuales técnico, de despliegue y de usuario | 🟢 |
 | [99-archive](./99-archive/) | Documentos reemplazados | 🟢 |
 
 ## Estado de íconos
