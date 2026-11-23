@@ -1,12 +1,14 @@
-## HU
+## Qué cambia
 
-<!-- Ej.: HU-09 · código en lista-tareas#NN · rama huN → dev -->
+<!-- Secciones tocadas y por qué. Ej.: 04-requirements: HU-11 (código en lista-tareas#NN) -->
 
-## Qué se documenta
+## Lista de verificación
 
-- [ ] Ficha `hu/HU-XX-*.md`: estado, PR, criterios marcados e "Implementación"
-- [ ] Tablero (`index.html`): tarjeta en la columna correcta con resumen corto
-- [ ] `diseno.md` / `decisiones.md` si hubo cambios de diseño o decisiones
-- [ ] `CHANGELOG.md` solo en una entrega
+- [ ] Las secciones de la [matriz de touchpoints](../00-governance/docs-touchpoints-matrix.md) que aplican están actualizadas
+- [ ] Cada archivo nuevo está registrado en el `README.md` de su sección
+- [ ] Fechas de "Última actualización" al día en lo que se tocó
+- [ ] Enlaces relativos funcionan
+- [ ] Sin datos sensibles
+- [ ] `CHANGELOG.md` y `03-product/roadmap.md` solo en una entrega
 
-<!-- PR hacia `dev`. A `main` solo llega un PR "Release: vX.Y.Z" desde `dev`. -->
+<!-- Rama efímera → main. Fusionar con merge y borrar la rama. -->
